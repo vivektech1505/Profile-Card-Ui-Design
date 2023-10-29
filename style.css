@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0;
+    background-color: #4070f4;
+}
+.image{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+.image .profile-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: red;
+}
+.text-data .name{
+    font-size: 25px;
+    font-weight: 600;
+}
+.text-data .job{
+    font-size: 16px;
+    font-weight: 500;
+}
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.media-buttons .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: 34px;
+    width: 34px;
+    margin: 0px 8px;
+    background-color: #4070f4;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 800;
+}
+.profile-card .button{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.button .button{
+    font-size: 14px;
+    margin: 0px 10px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 24px;
+    background-color:#4070f4;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button .button:hover{
+    background-color: #4070f4;
+    color: red;
+}
+.profile-card .analytics{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.analytics .data{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0px 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.data i{
+    font-size: 18px;
+    margin-right: 6px;
+}
+.data:last-child{
+    border-right: none;
+}
